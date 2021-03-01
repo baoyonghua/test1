@@ -1,4 +1,7 @@
+import os,sys
+base = os.path.abspath(__file__)
+sys.path.append(base)
 import pytest
 
-
-pytest.main(["-s", "-v", "--alluredir=output/allure-results"])
+# if __name__ == '__main__':
+pytest.main(["-s", "-v"])
